@@ -44,5 +44,11 @@ group :development, :test do
 
   # devise for user authentication
   gem 'devise', '~> 3.4.1'
-end
+
+  # paperclip gem for uploading files
+  gem 'paperclip', '~> 4.2.1'
+
+
+
+ end
 

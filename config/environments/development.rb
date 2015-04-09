@@ -39,7 +39,9 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  #In production, :host should be set to the actual host of your application. Needed for Devise
+  # In production, :host should be set to the actual host of your application. Needed for Devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # let Paperclip know to look here by adding this directory to its path (dev mode only)
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 
 end
