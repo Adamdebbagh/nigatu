@@ -2,25 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf5a3ee4-a568-4b97-a89d-ee6e30469aca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/galleries/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/galleries/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/movies/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/movies/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/galleries_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/galleries_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/gallery.rb" afterPath="$PROJECT_DIR$/app/models/gallery.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/movies/index.html.erb" afterPath="$PROJECT_DIR$/app/views/movies/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/movie.rb" afterPath="$PROJECT_DIR$/app/models/movie.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/movies_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nigatu.iml" afterPath="$PROJECT_DIR$/.idea/nigatu.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/galleries/show.html.erb" afterPath="$PROJECT_DIR$/app/views/galleries/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/movies/show.html.erb" afterPath="$PROJECT_DIR$/app/views/movies/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/galleries/images/000/000/003/medium/299.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/galleries/images/000/000/003/original/299.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/galleries/images/000/000/003/thumb/299.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/004/medium/Funny-Fanart-Posters-fifty-shades-trilogy-31253232-400-600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/004/original/Funny-Fanart-Posters-fifty-shades-trilogy-31253232-400-600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/004/thumb/Funny-Fanart-Posters-fifty-shades-trilogy-31253232-400-600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/003/medium/If_Only_movie_poster.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/003/original/If_Only_movie_poster.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/003/thumb/If_Only_movie_poster.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/001/medium/avatar_poster.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/001/original/avatar_poster.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/001/thumb/avatar_poster.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/002/medium/brokenkingdom.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/002/original/brokenkingdom.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/movies/images/000/000/002/thumb/brokenkingdom.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/profiles/missing.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20150409120355_add_user_id_to_galleries.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20150409124450_add_attachment_image_to_movies.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20150409124539_add_attachment_image_to_galleries.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nigatu.iws" />
@@ -118,11 +119,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gallery.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gallery.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/gallery.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25668448" vertical-offset="0" max-vertical-offset="374">
-              <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.460733" vertical-offset="0" max-vertical-offset="576">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -143,16 +154,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.4545455" vertical-offset="420" max-vertical-offset="1080">
               <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/galleries/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="720">
-              <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -185,6 +186,7 @@
         <option value="$PROJECT_DIR$/app/views/movies/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/movie.rb" />
         <option value="$PROJECT_DIR$/app/models/gallery.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -408,7 +410,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="ga&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/app/models/gallery.rb&#10;index&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/app/views/galleries/index.html.erb&#10;show&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/app/views/galleries/show.html.erb&#10;gallery.r&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/app/models/gallery.rb&#10;migrate&#9;ACTION&#9;rake:db:migrate&#10;gemf&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/Gemfile&#10;rout&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/config/routes.rb&#10;routes&#9;null&#9;null&#10;gem&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/Gemfile" />
+    <property name="SearchEverywhereHistoryKey" value=".gitig&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/.gitignore&#10;ga&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/app/models/gallery.rb&#10;index&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/app/views/galleries/index.html.erb&#10;show&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/app/views/galleries/show.html.erb&#10;gallery.r&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/app/models/gallery.rb&#10;migrate&#9;ACTION&#9;rake:db:migrate&#10;gemf&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/Gemfile&#10;rout&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/config/routes.rb&#10;routes&#9;null&#9;null&#10;gem&#9;FILE&#9;file:///Users/adamdebbagh/RubymineProjects/nigatu/Gemfile" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/db/development.sqlite3" />
     <property name="dynamic.classpath" value="false" />
   </component>
@@ -797,14 +799,20 @@
       <option name="project" value="LOCAL" />
       <updated>1428580475390</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".installed paperclip gem. added for image upload to both movie and galleries">
+      <created>1428589054539</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1428589054539</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="23" width="1346" height="701" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3289256" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289256" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289256" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -842,7 +850,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="initial setup. added movie and gallery scaffold. installed devise gem. added association between movies and users tables. added user_id as foreign key to movies table" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial setup. added movie and gallery scaffold. installed devise gem. added association between movies and users tables. added user_id as foreign key to movies table" />
+    <MESSAGE value=".installed paperclip gem. added for image upload to both movie and galleries" />
+    <option name="LAST_COMMIT_MESSAGE" value=".installed paperclip gem. added for image upload to both movie and galleries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1063,8 +1072,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gallery.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25668448" vertical-offset="0" max-vertical-offset="374">
-          <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.460733" vertical-offset="0" max-vertical-offset="576">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding />
         </state>
       </provider>
