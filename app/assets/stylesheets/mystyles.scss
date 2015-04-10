@@ -1,0 +1,60 @@
+body {
+  background: #730E15;
+
+}
+.review_title {
+  margin: 0 0 20px 0;
+}
+.reviews {
+  padding: 15px 0;
+  border-bottom: 1px solid #EAEAEA;
+}
+.star-rating {
+  padding-bottom: 8px;
+}
+
+.navbar-default {
+  background-color: #ac1826;
+  border-color: #ac1826;
+  color: #ffffff;
+}
+.navbar-default .navbar-brand {
+  color: #BDFAF3;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #BDFAF3;
+}
+#footer {
+  height: 60px;
+  background-color: #ac1826;
+}
+
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container .credit {
+  margin: 20px 0;
+
+}
+.text-muted {
+  color: #999;
+}
+
+.backtologin {
+  color: #FFF;
+  text-decoration: none;
+}
+.dark_menu {
+  background: #2E2F30;
+}
+.modal-dialog {
+  width: 300px;
+  margin: 30px auto;
+}
+
+.modal-content {
+  background-color: #B00100;
+  text-align: justify;
+  color:#F7F7F7;
+}
