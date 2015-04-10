@@ -1,4 +1,4 @@
-class BiographyController < ApplicationController
+class BiographiesController < ApplicationController
 
   def index
 

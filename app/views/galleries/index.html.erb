@@ -1,33 +1,24 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Galleries</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th>Target data</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @galleries.each do |gallery| %>
-      <tr>
-        <td><%= gallery.title %></td>
-        <td><%= gallery.description %></td>
-        <td><%= gallery.image_url %></td>
-        <td><%= gallery.target_data %></td>
-        <td><%= link_to 'Show', gallery %></td>
-        <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
-        <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Gallery', new_gallery_path %>
+<div class="row text-center">
+  <% @galleries.each do |photo| %>
+      <div class="col-md-3 col-sm-4 col-xs-6 "  data-toggle="modal" data-target="#<%= photo.target_data%>">
+        <%= image_tag photo.image.url, class:'img-responsive gallery' %>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="<%= photo.target_data %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel"><%= photo.title %></h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="<%= photo.image.url%>" alt="image">
+              <p><%= photo.description %></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>

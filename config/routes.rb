@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root 'movies#index'
   resources :galleries
   resources :movies
+  get 'biography' => 'biographies#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

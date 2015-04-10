@@ -48,6 +48,9 @@ group :development, :test do
   # paperclip gem for uploading files
   gem 'paperclip', '~> 4.2.1'
 
+  # twitter Bootstrap
+  gem 'bootstrap-sass', '~> 3.3.4.1'
+
 
 
  end
