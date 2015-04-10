@@ -13,4 +13,5 @@ class User < ActiveRecord::Base
 
   has_many :movies
   has_many :galleries
+  has_many :reviews, dependent: :destroy
 end

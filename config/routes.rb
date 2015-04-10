@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
   root 'movies#index'
-  resources :galleries
   resources :movies
+  resources :reviews, except: [:show, :index]
+  resources :galleries
+  devise_for :users
   get 'biography' => 'biographies#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
