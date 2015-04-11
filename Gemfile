@@ -51,6 +51,9 @@ group :development, :test do
   # twitter Bootstrap
   gem 'bootstrap-sass', '~> 3.3.4.1'
 
+  # for seaching movies
+  gem 'searchkick', '~> 0.8.7'
+
 
 
  end

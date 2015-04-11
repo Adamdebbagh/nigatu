@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   root 'movies#index'
-  resources :movies
-  resources :reviews, except: [:show, :index]
+  resources :movies do
+    collection do
+      get 'search'
+    end
+    resources :reviews, except: [:show, :index] #nested reviews under movies
+  end
   resources :galleries
   devise_for :users
   get 'biography' => 'biographies#index'
