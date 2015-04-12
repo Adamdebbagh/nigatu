@@ -54,7 +54,5 @@ group :development, :test do
   # for seaching movies
   gem 'searchkick', '~> 0.8.7'
 
-
-
  end
 

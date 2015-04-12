@@ -1,20 +1,15 @@
-
-
 <!-- Page Content -->
+
 <div class="container">
 
   <div class="row">
 
-    <!--Vido Section-->
-    <div class="col-md-8">
-      <div class="embed-container">
-
-        <%= embed(@movie.video_url) %>
-
-      </div>
-
+    <!--Video Section-->
+    <div class="col-md-8 well">
+      <div class="embed-container "><%= embed(@movie.video_url) %></div>
     </div>
-<!-- Review Section -->
+
+    <!-- Description Section -->
     <div class="col-md-4">
 
       <div class="thumbnail">
@@ -45,7 +40,8 @@
         </div>
         </div>
       </div>
-      <!-- Movie Rating-->
+
+      <!-- Rating Section-->
       <div class="well">
 
         <% if @reviews.blank? %>
