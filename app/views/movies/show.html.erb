@@ -7,7 +7,26 @@
     <!--Video Section-->
     <div class="col-md-8 well">
       <div class="embed-container "><%= embed(@movie.video_url) %></div>
-    </div>
+
+
+    <!-- Discussion Section -->
+
+      <h4><%= @movie.comments.count %> <em>Comments&nbsp;</em>
+
+      <% if !user_signed_in?  %>
+         <small><%= link_to ' sign in', new_user_session_path %> to leave a comment</small>
+      <%end%></h4>
+      <% if !@movie.comments.blank? %>
+      <div id="comments"><%= render @movie.comments %></div><!-- comments list -->
+      <% end %>
+      <% if user_signed_in? %>
+
+        <%= render 'comments/form' %><!-- comment form-->
+      <% end %>
+      <!--<div id="comments"><%#= render @movie.comments %></div> comments list -->
+
+
+  </div>
 
     <!-- Description Section -->
     <div class="col-md-4">
@@ -85,6 +104,7 @@
     <!-- users should not be able to edit the movie data  -->
     <%= link_to 'Edit', edit_movie_path(@movie) %> |
     <%= link_to 'Back', movies_path %>
+    <%#= link_to 'Delete', %>
 <% end %>
 
 <script>

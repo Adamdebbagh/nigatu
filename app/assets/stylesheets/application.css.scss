@@ -106,3 +106,36 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/********  Comment    *****/
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  margin-bottom: 30px;
+}
+.button {
+  color: #397CAC;
+  border: 1px solid #397CAC;
+  padding: .5em 1em;
+  border-radius: 0.2em;
+  text-decoration: none;
+  margin-right: 2%;
+  float: right;
+}
+#comments {
+  background: white;
+  padding: 2em 5%;
+  border-radius: .5em;
+  padding-top: 1.3em;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:#265c7c
+}
+.comment_author{
+  float: right;
+}

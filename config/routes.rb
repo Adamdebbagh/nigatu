@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       get 'search'
     end
     resources :reviews, except: [:show, :index] #nested reviews under movies
+    resources :comments #nested comments under movies
   end
   resources :galleries
   devise_for :users
