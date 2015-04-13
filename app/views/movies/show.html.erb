@@ -35,7 +35,7 @@
         <%= image_tag @movie.image.url(:medium) %>
         <div class="caption-full">
           <div class="ratings pull-right">
-            <em><%= "#{@reviews.length} reviews" %></em>
+            <em><%= "#{@query_review.length} reviews" %></em>
             <p class="star-rating pull-left" data-score =<%= @avg_review %></p>
           </div>
            <!-- Movie Title-->
@@ -74,22 +74,19 @@
               <%= link_to 'Leave a Review', new_movie_review_path(@movie), class: 'btn btn-success' %>
             </div>
             <% @reviews.each do |review| %>
-
-        <hr>
-
-        <div class="row">
-          <div class="col-md-12 review">
-            by <%= review.user.email %>
-            <div class="star-rating" data-score=<%= review.rating %>></div>
-            <span class="pull-right text-muted"><%= time_ago_in_words(review.created_at)%> ago</span>
-            <p class="text-info"><%= review.comment %></p>
-          </div>
-        </div>
-
+            <hr>
+            <div class="row">
+                <div class="col-md-12 review">
+                     by <%= review.user.email %>
+                    <div class="star-rating" data-score=<%= review.rating %>></div>
+                    <span class="pull-right text-muted"><%= time_ago_in_words(review.created_at)%> ago</span>
+                    <p class="text-info"><%= review.comment %></p>
+            </div>
+            </div>
         <% end %>
       <% end %>
         <hr>
-
+        <%= will_paginate @reviews, :page_links => false,class:'digg_pagination' %>
       </div>
 
     </div>
@@ -103,8 +100,8 @@
 <% if user_signed_in? %>
     <!-- users should not be able to edit the movie data  -->
     <%= link_to 'Edit', edit_movie_path(@movie) %> |
-    <%= link_to 'Back', movies_path %>
-    <%#= link_to 'Delete', %>
+    <%= link_to 'Back', movies_path %> |
+    <%= link_to 'Delete',  @movie, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
 
 <script>

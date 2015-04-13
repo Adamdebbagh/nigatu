@@ -56,5 +56,10 @@ group :development, :test do
 
   # simple form
   gem 'simple_form'
+
+  # pagination gems
+  gem 'will_paginate', '~> 3.0.7'
+  gem 'will_paginate-bootstrap', '~> 1.0.1'
+
  end
 
