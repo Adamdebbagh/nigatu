@@ -82,7 +82,7 @@
       <%= form_tag search_movies_path, method: :get,class: 'navbar-form navbar-right', role: 'search' do%>
           <p>
             <%= text_field_tag :search, params[:search], class: 'form-control' %>
-            <%= submit_tag 'Search', name:nil, class:'btn btn-default' %>
+            <%= submit_tag 'Search', name:nil, class:'btn  btn-danger btn-xs' %>
           </p>
       <% end %>
 

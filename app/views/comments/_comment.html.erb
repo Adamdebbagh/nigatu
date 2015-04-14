@@ -1,12 +1,13 @@
 <div>
-  <p class="comment_author"><%= comment.user.email %></p>
-  <p class="comment_content"><%= comment.comment %></p>
+  <% @comments.each do |comment| %>
+      <p class="pull-left "><%= image_tag avatar_url(comment.user.email),class:'round-avatar' %>
+        <br><strong><span class="comment_author"><%= comment.user.username.titleize %></span></strong></p><br><br><br>
 
+  <p class="comment_content"><%= comment.comment %></p>
   <span class="pull-right text-muted"><%= time_ago_in_words(comment.created_at)%> ago</span>
 
-
+      <hr>
 <%#= link_to 'Edit', edit_movie_comment_path(comment.movie, comment),class: 'button' %>
 <%#= link_to 'Delete', [comment.movie, comment], method: :delete, data: { confirm: 'Are you sure?' },class: 'button'%>
-
+<%end%>
 </div>
-<hr>

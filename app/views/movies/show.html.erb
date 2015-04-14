@@ -5,26 +5,24 @@
   <div class="row">
 
     <!--Video Section-->
-    <div class="col-md-8 well">
-      <div class="embed-container "><%= embed(@movie.video_url) %></div>
+    <div class="col-md-8">
+      <div class="embed-container  well"><%= embed(@movie.video_url) %></div>
 
 
     <!-- Discussion Section -->
+    <div class="discussion" >
 
-      <h4><%= @movie.comments.count %> <em>Comments&nbsp;</em>
-
-      <% if !user_signed_in?  %>
-         <small><%= link_to ' sign in', new_user_session_path %> to leave a comment</small>
-      <%end%></h4>
-      <% if !@movie.comments.blank? %>
-      <div id="comments"><%= render @movie.comments %></div><!-- comments list -->
-      <% end %>
       <% if user_signed_in? %>
-
+        <h4><%= @comments.count %><em>&nbsp;Comments&nbsp;</em></h4>
         <%= render 'comments/form' %><!-- comment form-->
+      <% else %>
+          <h4><%= @comments.count %><em>&nbsp;Comments&nbsp;</em><small><%= link_to ' sign in', new_user_session_path %> to leave a comment</small></h4>
       <% end %>
-      <!--<div id="comments"><%#= render @movie.comments %></div> comments list -->
 
+      <% if !@comments.blank? %>
+          <div id="comments"><%= render 'comments/comment' %></div><!-- comments list -->
+      <% end %>
+    </div>
 
   </div>
 
@@ -77,8 +75,10 @@
             <hr>
             <div class="row">
                 <div class="col-md-12 review">
-                     by <%= review.user.email %>
-                    <div class="star-rating" data-score=<%= review.rating %>></div>
+                      <%#= review.user.email %>
+                  <p class="pull-left"><%= image_tag avatar_url(review.user.email),class:'round-avatar' %>
+                    <br><strong><span class="comment_author"><%= review.user.username.titleize %></span></strong></p><br><br><br>
+                  <div class="star-rating" data-score=<%= review.rating %>></div>
                     <span class="pull-right text-muted"><%= time_ago_in_words(review.created_at)%> ago</span>
                     <p class="text-info"><%= review.comment %></p>
             </div>

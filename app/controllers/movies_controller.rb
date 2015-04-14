@@ -21,16 +21,13 @@ class MoviesController < ApplicationController
   def show
     @query_review = Review.where(movie_id: @movie.id)
     @reviews = @query_review.order("created_at DESC").paginate(:page => params[:page], :per_page => 4)
-
     if @reviews.blank?
       @avg_review = 0
     else
-     # @avg_review = @reviews.average(:rating).round(2,BigDecimal::ROUND_HALF_EVEN)
       @avg_review = @query_review.order("created_at DESC").average(:rating).round(2,BigDecimal::ROUND_HALF_EVEN)
-
     end
-    #@rev_pages = @reviews.paginate(:page => params[:page], :per_page => 2)
 
+    @comments = Comment.where(movie_id: @movie.id).order("created_at DESC")
   end
 
   # GET /movies/new
